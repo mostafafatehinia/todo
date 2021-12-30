@@ -1,8 +1,9 @@
+import "./style.css";
 export const Task = () => {
 	return (
-		<div className='flex justify-center last:mb-10'>
-			<div className='bg-white h-fit w-2/3 md:w-1/2 text-center mt-10 rounded-2xl shadow-lg p-10 hover:shadow-2xl transition duration-500'>
-				<div title='creation time' className='text-gray-400 flex justify-center items-center pr-2 mb-4'>
+		<div className='task-wrapper'>
+			<div className='task-card'>
+				<div title='creation time' className='time-icon'>
 					<svg
 						xmlns='http://www.w3.org/2000/svg'
 						className='h-6 w-6 mr-2'
@@ -19,11 +20,11 @@ export const Task = () => {
 					</svg>
 					<p className='text-xs uppercase'>2020/2/1 12:20 am</p>
 				</div>
-				<p className='mb-8 text-gray-600 text-ellipsis overflow-hidden font-medium h-12'>
+				<p className='task-text'>
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio quis aliquam mollitia assumenda atque
 					est commodi, corporis deleniti reprehenderit harum.
 				</p>
-				<div className='flex justify-around relative'>
+				<div className='task-status'>
 					<div title='to do' className='text-blue-400 pr-2'>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
