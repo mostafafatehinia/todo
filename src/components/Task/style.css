@@ -13,3 +13,6 @@
 .task-status {
 	@apply flex justify-around relative;
 }
+.task-status-icons {
+	@apply h-6 w-6 cursor-pointer active:scale-125;
+}

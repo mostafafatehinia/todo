@@ -28,7 +28,7 @@ export const Task = () => {
 					<div title='to do' className='text-blue-400 pr-2'>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
-							className='h-6 w-6 cursor-pointer'
+							className='task-status-icons'
 							fill='none'
 							viewBox='0 0 24 24'
 							stroke='currentColor'
@@ -50,7 +50,7 @@ export const Task = () => {
 					<div title='doing' className='text-blue-700 pr-2'>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
-							className='w-6 h-6 cursor-pointer'
+							className='task-status-icons'
 							fill='none'
 							viewBox='0 0 24 24'
 							stroke='currentColor'
@@ -66,7 +66,7 @@ export const Task = () => {
 					<div title='done' className='text-green-500 pr-2'>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
-							className='h-6 w-6 cursor-pointer hover:animate-bounce'
+							className='h-6 w-6 cursor-pointer active:scale-125'
 							fill='none'
 							viewBox='0 0 24 24'
 							stroke='currentColor'
@@ -79,10 +79,10 @@ export const Task = () => {
 							/>
 						</svg>
 					</div>
-					<div title='delete'>
+					<div title='delete' className='text-red-400'>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
-							className='h-6 w-6 text-red-400 cursor-pointer hover:animate-spin'
+							className='task-status-icons'
 							fill='none'
 							viewBox='0 0 24 24'
 							stroke='currentColor'
